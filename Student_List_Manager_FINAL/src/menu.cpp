@@ -6,6 +6,7 @@
 #include "student.hpp"
 #include "menu.hpp"
 #include "algos.hpp"
+#include "security.hpp"
 
 using std::ofstream;
 using std::cout;
@@ -36,6 +37,7 @@ void menu(){
         cout << "[1] Add Student Info\n";
         cout << "[2] View Student List\n";
         cout << "[3] Search\n";
+        cout << "[4] Change password\n";
         cout << "[0] Exit\n";
         cout << ">> ";
         cin >> choice;
@@ -183,6 +185,9 @@ void menu(){
                 system("pause");
                 break;
             }
+            case 4:
+                changeKey();
+                break;
             case 0: // oke
                 cout << "\n[Program Terminated]\n";
                 return;
