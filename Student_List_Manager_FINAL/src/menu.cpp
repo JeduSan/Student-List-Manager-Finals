@@ -82,7 +82,7 @@ void menu(){
                 cin >> choice;
                 cin.clear();
                 cin.ignore();
-
+                cout << "\n";
                 // [FLOW] file>>list>>sort>>file>>print (except 5, no sort)
                 FiletoVector(names, nameDB);
                 FiletoVector(ids, idDB);
@@ -119,9 +119,8 @@ void menu(){
 
                         printFile();
                     } else if (choice == 5) {
-                        VectortoFile(names, nameDB);
-                        VectortoFile(ids, idDB);
-
+                        // VectortoFile(names, nameDB);
+                        // VectortoFile(ids, idDB);
                         printFile();
                     } else cerr << "ERROR: Invalid Input!\n";
                 system("pause");

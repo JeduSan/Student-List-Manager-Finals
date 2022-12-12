@@ -13,10 +13,9 @@ bool login()
     ifstream fin;
     string tmp, key;
 
-    decrypt(keyContainer);
-
     cout << "\nVault Key : ";
     cin >> key;
+    decrypt(keyContainer);
     fin.open(keyContainer);
     fin >> tmp;
 

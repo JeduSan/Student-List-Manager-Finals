@@ -7,6 +7,7 @@
 // - It is important to sort the name and id together even if it's slow
 // - [COMMON FLOW IN THE PROGRAM] file >> vector >> action >> file
 // - Default pass is 1234, unless changed
+// - DO NOT FORCE EXIT THE PROGRAM (ctrl+c), it will leave the text files decrypted, and the program won't work as intended.
 // - The other notes are scattered here somewhere ;-;
 
 // [COMPILE] g++ src/main.cpp src/menu.cpp src/algos.cpp src/fileUtils.cpp src/student.cpp src/security.cpp -I includes -o src/main
@@ -19,6 +20,7 @@ int main() {
     // encrypt files after creation, for debug only, comment this after encrypting the file
     // encrypt(idDB);
     // encrypt(nameDB);
+    // encrypt (keyContainer)
 
     home();
     // for login
